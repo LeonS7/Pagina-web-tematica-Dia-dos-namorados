@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosso universo</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <audio id="bgMusic" autoplay loop preload="auto">
+    <source src="musica/camilla%20cabello%20-%20easy.mpeg" type="audio/mpeg">
+  </audio>
+
+  <div id="scene" aria-hidden="true"></div>
+  <div class="big-bang" aria-hidden="true"></div>
+
+  <div class="center-copy">
+    <p class="eyebrow">Feliz Dia dos Namorados</p>
+    <h1>Eu te amo</h1>
+    <p class="infinity">Infinito</p>
+  </div>
+
+  <div class="top-controls" aria-label="Controles">
+    <button class="control-btn letter-btn" id="letterToggle" type="button" title="Carta" aria-label="Abrir carta">Carta</button>
+    <button class="control-btn" id="musicToggle" type="button" title="Musica" aria-label="Alternar musica">&#9835;</button>
+  </div>
+
+  <div class="photo-spotlight" id="photoSpotlight" aria-hidden="true">
+    <button class="close-btn spotlight-close" id="closeSpotlight" type="button" title="Fechar" aria-label="Fechar foto">&times;</button>
+    <figure>
+      <img id="spotlightImage" alt="Foto ampliada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
+      <figcaption id="spotlightTitle"></figcaption>
+    </figure>
+  </div>
+
+  <aside class="letter-drawer" id="letterDrawer" aria-hidden="true">
+    <button class="close-btn" id="closeLetter" type="button" title="Fechar" aria-label="Fechar cartinha">&times;</button>
+    <h2>Para o meu amor</h2>
+    <p>
+      Fiz esse universo para guardar nossas memorias como estrelas. Cada foto
+      orbita o centro dessa historia porque tudo aqui gira em volta do que eu
+      sinto por voce. Obrigado por ser minha paz, meu riso facil e minha pessoa
+      favorita. Eu te amo, hoje e em todos os infinitos.
+    </p>
+  </aside>
+
+  <section class="memory-panel" id="memoryPanel" aria-label="Nossas memorias" aria-hidden="true">
+    <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+    <div class="memory-view">
+      <button class="nav-btn" id="prevPhoto" type="button" title="Anterior" aria-label="Foto anterior">&#8249;</button>
+      <figure class="memory-frame">
+        <img id="mainPhoto" alt="Nossa foto em destaque">
+        <figcaption>
+          <p class="memory-kicker" id="memoryKicker">Memoria 01</p>
+          <p class="memory-title" id="memoryTitle">Nossa historia</p>
+          <p class="memory-text" id="memoryText">Cada foto e um pedacinho bonito do nosso universo.</p>
+        </figcaption>
+      </figure>
+      <button class="nav-btn" id="nextPhoto" type="button" title="Proxima" aria-label="Proxima foto">&#8250;</button>
+    </div>
+    <div class="photo-rail" id="photoRail" aria-label="Todas as fotos"></div>
+  </section>
+
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>
